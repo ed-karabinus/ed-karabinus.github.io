@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Display your Guesses at these Dice Puzzles!</title>
+<title>Display your Guesses at these Dice Puzzles! Created by Ed Karabinus</title>
 <script language = "Javascript">
 function displayGuessTM (form) {
   var TestVar1 = form.inputbox_tm_1.value.toUpperCase();
@@ -11,6 +11,15 @@ function displayGuessTM (form) {
   var TestVar6 = form.inputbox_tm_6.value.toUpperCase();
   form.outputbox_tm.value =  "The truck model is: " + TestVar3 + TestVar5 + TestVar1 + TestVar5 + TestVar3 + TestVar2 + " " + TestVar3 + TestVar2 + TestVar6 + TestVar5 + TestVar4 + TestVar2;
 }
+function clearGuessTM (form) {
+  form.inputbox_tm_1.value = "";
+  form.inputbox_tm_2.value = "";
+  form.inputbox_tm_3.value = "";
+  form.inputbox_tm_4.value = "";
+  form.inputbox_tm_5.value = "";
+  form.inputbox_tm_6.value = "";
+  form.outputbox_tm.value = "";
+}
 function displayGuessAuthor (form) {
   var TestVar1 = form.inputbox_a_1.value.toUpperCase();
   var TestVar2 = form.inputbox_a_2.value.toUpperCase();
@@ -20,6 +29,15 @@ function displayGuessAuthor (form) {
   var TestVar6 = form.inputbox_a_6.value.toUpperCase();
   form.outputbox_a.value =  "The author is: " + TestVar3 + TestVar5 + TestVar6 + " " + TestVar1 + TestVar3 + TestVar5 + TestVar2 + TestVar1 + TestVar4 + TestVar3 + TestVar6;
 }
+function clearGuessAuthor (form) {
+  form.inputbox_a_1.value = "";
+  form.inputbox_a_2.value = "";
+  form.inputbox_a_3.value = "";
+  form.inputbox_a_4.value = "";
+  form.inputbox_a_5.value = "";
+  form.inputbox_a_6.value = "";
+  form.outputbox_a.value = "";
+}
 function displayGuessST (form) {
   var TestVar1 = form.inputbox_st_1.value.toUpperCase();
   var TestVar2 = form.inputbox_st_2.value.toUpperCase();
@@ -28,6 +46,15 @@ function displayGuessST (form) {
   var TestVar5 = form.inputbox_st_5.value.toUpperCase();
   var TestVar6 = form.inputbox_st_6.value.toUpperCase();
   form.outputbox_st.value =  "The sports team is: " + TestVar6 + TestVar1 + TestVar3 + TestVar3 + TestVar1 + TestVar5 + TestVar5 + TestVar1 + TestVar1 +  " " + TestVar6 + TestVar4 + TestVar6 + TestVar2 + TestVar3 + TestVar5;
+}
+function clearGuessST (form) {
+  form.inputbox_st_1.value = "";
+  form.inputbox_st_2.value = "";
+  form.inputbox_st_3.value = "";
+  form.inputbox_st_4.value = "";
+  form.inputbox_st_5.value = "";
+  form.inputbox_st_6.value = "";
+  form.outputbox_st.value = "";
 }
 </script>
 </head>
@@ -59,8 +86,9 @@ Enter your guess for <img src = "Die5.png" width = "20">:
 <input type = "text" name = "inputbox_tm_5" value = "" style = "width:30px"><p>
 Enter your guess for <img src = "Die6.png" width = "20">: 
 <input type = "text" name = "inputbox_tm_6" value = "" style = "width:30px"><p>
-<input type = "button" name = "button" value = "Solve Truck Model Puzzle" onClick = "displayGuessTM(this.form)"><br>
-<input type = "text" name = "outputbox_tm" value = "" style = "width:250px"><p>
+<input type = "button" name = "button" value = "Solve Truck Model Puzzle" onClick = "displayGuessTM(this.form)">
+<input type = "button" name = "button" value = "Clear Truck Model Puzzle" onClick = "clearGuessTM(this.form)"><br>
+<input type = "text" name = "outputbox_tm" value = "" style = "width:310px"><p>
 </form>
 <h3>Author Puzzle</h3>
 <img src = "Die3.png" width = "20">
@@ -88,8 +116,9 @@ Enter your guess for <img src = "Die5.png" width = "20">:
 <input type = "text" name = "inputbox_a_5" value = "" style = "width:30px"><p>
 Enter your guess for <img src = "Die6.png" width = "20">: 
 <input type = "text" name = "inputbox_a_6" value = "" style = "width:30px"><p>
-<input type = "button" name = "button" value = "Solve Author Puzzle" onClick = "displayGuessAuthor(this.form)"><br>
-<input type = "text" name = "outputbox_a" value = "" style = "width:250px"><p>
+<input type = "button" name = "button" value = "Solve Author Puzzle" onClick = "displayGuessAuthor(this.form)">
+<input type = "button" name = "button" value = "Clear Author Puzzle" onClick = "clearGuessAuthor(this.form)"><br>
+<input type = "text" name = "outputbox_a" value = "" style = "width:310px"><p>
 </form>
 <h3>Sports Team Puzzle</h3>
 <img src = "Die6.png" width = "20">
@@ -121,8 +150,9 @@ Enter your guess for <img src = "Die5.png" width = "20">:
 <input type = "text" name = "inputbox_st_5" value = "" style = "width:30px"><p>
 Enter your guess for <img src = "Die6.png" width = "20">: 
 <input type = "text" name = "inputbox_st_6" value = "" style = "width:30px"><p>
-<input type = "button" name = "button" value = "Solve Sports Team Puzzle" onClick = "displayGuessST(this.form)"><br>
-<input type = "text" name = "outputbox_st" value = "" style = "width:250px"><p>
+<input type = "button" name = "button" value = "Solve Sports Team Puzzle" onClick = "displayGuessST(this.form)">
+<input type = "button" name = "button" value = "Clear Sports Team Puzzle" onClick = "clearGuessST(this.form)"><br>
+<input type = "text" name = "outputbox_st" value = "" style = "width:310px"><p>
 </form>
 </body>
 </html>
