@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Display your Guesses at these Dice Puzzles!</title>
+<script language = "Javascript">
+function displayGuessTM (form) {
+  var TestVar1 = form.inputbox_tm_1.value.toUpperCase();
+  var TestVar2 = form.inputbox_tm_2.value.toUpperCase();
+  var TestVar3 = form.inputbox_tm_3.value.toUpperCase();
+  var TestVar4 = form.inputbox_tm_4.value.toUpperCase();
+  var TestVar5 = form.inputbox_tm_5.value.toUpperCase();
+  var TestVar6 = form.inputbox_tm_6.value.toUpperCase();
+  form.outputbox_tm.value =  "The truck model is: " + TestVar3 + TestVar5 + TestVar1 + TestVar5 + TestVar3 + TestVar2 + " " + TestVar3 + TestVar2 + TestVar6 + TestVar5 + TestVar4 + TestVar2;
+}
+function displayGuessAuthor (form) {
+  var TestVar1 = form.inputbox_a_1.value.toUpperCase();
+  var TestVar2 = form.inputbox_a_2.value.toUpperCase();
+  var TestVar3 = form.inputbox_a_3.value.toUpperCase();
+  var TestVar4 = form.inputbox_a_4.value.toUpperCase();
+  var TestVar5 = form.inputbox_a_5.value.toUpperCase();
+  var TestVar6 = form.inputbox_a_6.value.toUpperCase();
+  form.outputbox_a.value =  "The author is: " + TestVar3 + TestVar5 + TestVar6 + " " + TestVar1 + TestVar3 + TestVar5 + TestVar2 + TestVar1 + TestVar4 + TestVar3 + TestVar6;
+}
+function displayGuessST (form) {
+  var TestVar1 = form.inputbox_st_1.value.toUpperCase();
+  var TestVar2 = form.inputbox_st_2.value.toUpperCase();
+  var TestVar3 = form.inputbox_st_3.value.toUpperCase();
+  var TestVar4 = form.inputbox_st_4.value.toUpperCase();
+  var TestVar5 = form.inputbox_st_5.value.toUpperCase();
+  var TestVar6 = form.inputbox_st_6.value.toUpperCase();
+  form.outputbox_st.value =  "The sports team is: " + TestVar6 + TestVar1 + TestVar3 + TestVar3 + TestVar1 + TestVar5 + TestVar5 + TestVar1 + TestVar1 +  " " + TestVar6 + TestVar4 + TestVar6 + TestVar2 + TestVar3 + TestVar5;
+}
+</script>
+</head>
+<body>
+<h3>Truck Model Puzzle</h3>
+<img src = "Die3.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die1.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die3.png" width = "20">
+<img src = "Die2.png" width = "20"><br>
+<img src = "Die3.png" width = "20">
+<img src = "Die2.png" width = "20">
+<img src = "Die6.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die4.png" width = "20">
+<img src = "Die2.png" width = "20"><br>
+<p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a truck model.</p>
+<form name = "truck_model" action = "" method = "get">
+Enter your guess for <img src = "Die1.png" width = "20">: 
+<input type = "text" name = "inputbox_tm_1" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die2.png" width = "20">: 
+<input type = "text" name = "inputbox_tm_2" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die3.png" width = "20">: 
+<input type = "text" name = "inputbox_tm_3" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die4.png" width = "20">: 
+<input type = "text" name = "inputbox_tm_4" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die5.png" width = "20">: 
+<input type = "text" name = "inputbox_tm_5" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die6.png" width = "20">: 
+<input type = "text" name = "inputbox_tm_6" value = "" style = "width:30px"><p>
+<input type = "button" name = "button" value = "Solve Truck Model Puzzle" onClick = "displayGuessTM(this.form)"><br>
+<input type = "text" name = "outputbox_tm" value = "" style = "width:250px"><p>
+</form>
+<h3>Author Puzzle</h3>
+<img src = "Die3.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die6.png" width = "20"><br>
+<img src = "Die1.png" width = "20">
+<img src = "Die3.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die2.png" width = "20">
+<img src = "Die1.png" width = "20">
+<img src = "Die4.png" width = "20">
+<img src = "Die3.png" width = "20">
+<img src = "Die6.png" width = "20"><br>
+<p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of an author.</p>
+<form name = "author" action = "" method = "get">
+Enter your guess for <img src = "Die1.png" width = "20">: 
+<input type = "text" name = "inputbox_a_1" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die2.png" width = "20">: 
+<input type = "text" name = "inputbox_a_2" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die3.png" width = "20">: 
+<input type = "text" name = "inputbox_a_3" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die4.png" width = "20">: 
+<input type = "text" name = "inputbox_a_4" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die5.png" width = "20">: 
+<input type = "text" name = "inputbox_a_5" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die6.png" width = "20">: 
+<input type = "text" name = "inputbox_a_6" value = "" style = "width:30px"><p>
+<input type = "button" name = "button" value = "Solve Author Puzzle" onClick = "displayGuessAuthor(this.form)"><br>
+<input type = "text" name = "outputbox_a" value = "" style = "width:250px"><p>
+</form>
+<h3>Sports Team Puzzle</h3>
+<img src = "Die6.png" width = "20">
+<img src = "Die1.png" width = "20">
+<img src = "Die3.png" width = "20">
+<img src = "Die3.png" width = "20">
+<img src = "Die1.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die5.png" width = "20">
+<img src = "Die1.png" width = "20">
+<img src = "Die1.png" width = "20"><br>
+<img src = "Die6.png" width = "20">
+<img src = "Die4.png" width = "20">
+<img src = "Die6.png" width = "20">
+<img src = "Die2.png" width = "20">
+<img src = "Die3.png" width = "20">
+<img src = "Die5.png" width = "20"><br>
+<p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a sports team.</p>
+<form name = "sports_team" action = "" method = "get">
+Enter your guess for <img src = "Die1.png" width = "20">: 
+<input type = "text" name = "inputbox_st_1" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die2.png" width = "20">: 
+<input type = "text" name = "inputbox_st_2" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die3.png" width = "20">: 
+<input type = "text" name = "inputbox_st_3" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die4.png" width = "20">: 
+<input type = "text" name = "inputbox_st_4" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die5.png" width = "20">: 
+<input type = "text" name = "inputbox_st_5" value = "" style = "width:30px"><p>
+Enter your guess for <img src = "Die6.png" width = "20">: 
+<input type = "text" name = "inputbox_st_6" value = "" style = "width:30px"><p>
+<input type = "button" name = "button" value = "Solve Sports Team Puzzle" onClick = "displayGuessST(this.form)"><br>
+<input type = "text" name = "outputbox_st" value = "" style = "width:250px"><p>
+</form>
+</body>
+</html>
