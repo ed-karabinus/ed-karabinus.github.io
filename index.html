@@ -52,6 +52,21 @@ function clearGuessTM () {
   document.getElementById("tm_o_11").value = "";
   document.getElementById("tm_o_12").value = "";
 }
+function checkGuessTM() {
+  var TestVar1 = document.getElementById("tm_i_1").value.toUpperCase();
+  var TestVar2 = document.getElementById("tm_i_2").value.toUpperCase();
+  var TestVar3 = document.getElementById("tm_i_3").value.toUpperCase();
+  var TestVar4 = document.getElementById("tm_i_4").value.toUpperCase();
+  var TestVar5 = document.getElementById("tm_i_5").value.toUpperCase();
+  var TestVar6 = document.getElementById("tm_i_6").value.toUpperCase();
+  if (TestVar1 === "Y" && TestVar2 === "A" && TestVar3 === "T" &&
+      TestVar4 === "M" && TestVar5 === "O" && TestVar6 === "C") {
+    alert ("Correct! Great job.")
+  }
+  else {
+    alert ("Try again! Your guess is incorrect.")
+  }
+}
 function updateA1 (x) {
   var TestVar = x.toUpperCase();
   document.getElementById("a_o_4").value = TestVar;
@@ -99,6 +114,21 @@ function clearGuessAuthor () {
   document.getElementById("a_o_9").value = "";
   document.getElementById("a_o_10").value = "";
   document.getElementById("a_o_11").value = "";
+}
+function checkGuessAuthor () {
+  var TestVar1 = document.getElementById("a_i_1").value.toUpperCase();
+  var TestVar2 = document.getElementById("a_i_2").value.toUpperCase();
+  var TestVar3 = document.getElementById("a_i_3").value.toUpperCase();
+  var TestVar4 = document.getElementById("a_i_4").value.toUpperCase();
+  var TestVar5 = document.getElementById("a_i_5").value.toUpperCase();
+  var TestVar6 = document.getElementById("a_i_6").value.toUpperCase();
+  if (TestVar1 === "B" && TestVar2 === "D" && TestVar3 === "R" &&
+      TestVar4 === "U" && TestVar5 === "A" && TestVar6 === "Y") {
+    alert ("Correct! Great job.")
+  }
+  else {
+    alert ("Try again! Your guess is incorrect.")
+  }
 }
 function updateST1 (x) {
   var TestVar = x.toUpperCase();
@@ -156,6 +186,21 @@ function clearGuessST () {
   document.getElementById("st_o_14").value = "";
   document.getElementById("st_o_15").value = "";
 }
+function checkGuessST () {
+  var TestVar1 = document.getElementById("st_i_1").value.toUpperCase();
+  var TestVar2 = document.getElementById("st_i_2").value.toUpperCase();
+  var TestVar3 = document.getElementById("st_i_3").value.toUpperCase();
+  var TestVar4 = document.getElementById("st_i_4").value.toUpperCase();
+  var TestVar5 = document.getElementById("st_i_5").value.toUpperCase();
+  var TestVar6 = document.getElementById("st_i_6").value.toUpperCase();
+  if (TestVar1 === "E" && TestVar2 === "A" && TestVar3 === "N" &&
+      TestVar4 === "I" && TestVar5 === "S" && TestVar6 === "T") {
+    alert ("Correct! Great job.")
+  }
+  else {
+    alert ("Try again! Your guess is incorrect.")
+  }
+}
 </script>
 </head>
 <body>
@@ -199,6 +244,7 @@ Enter your guess for <img src = "Die5.png" width = "20">:
 Enter your guess for <img src = "Die6.png" width = "20">: 
 <input type = "text" id = "tm_i_6" value = "" style = "width:20px" onkeyup="updateTM6(this.value);"><p>
 <input type = "button" value = "Clear Truck Model Puzzle" onClick = "clearGuessTM();">
+<input type = "button" value = "Check Truck Model Puzzle" onClick = "checkGuessTM();">
 <h3>Author Puzzle</h3>
 <img src = "Die3.png" width = "20">
 <img src = "Die5.png" width = "20">
@@ -237,6 +283,7 @@ Enter your guess for <img src = "Die5.png" width = "20">:
 Enter your guess for <img src = "Die6.png" width = "20">: 
 <input type = "text" id = "a_i_6" value = "" style = "width:20px" onkeyup="updateA6(this.value);"><p>
 <input type = "button" value = "Clear Author Puzzle" onClick = "clearGuessAuthor();">
+<input type = "button" value = "Check Author Puzzle" onClick = "checkGuessAuthor();">
 <h3>Sports Team Puzzle</h3>
 <img src = "Die6.png" width = "20">
 <img src = "Die1.png" width = "20">
@@ -283,5 +330,6 @@ Enter your guess for <img src = "Die5.png" width = "20">:
 Enter your guess for <img src = "Die6.png" width = "20">: 
 <input type = "text" id = "st_i_6" value = "" style = "width:20px" onkeyup="updateST6(this.value);"><p>
 <input type = "button" value = "Clear Sports Team Puzzle" onClick = "clearGuessST();">
+<input type = "button" value = "Check Sports Team Puzzle" onClick = "checkGuessST();">
 </body>
 </html>
