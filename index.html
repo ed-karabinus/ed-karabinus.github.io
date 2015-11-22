@@ -2,59 +2,159 @@
 <head>
 <title>Display your Guesses at these Dice Puzzles! Created by Ed Karabinus</title>
 <script language = "Javascript">
-function displayGuessTM (form) {
-  var TestVar1 = form.inputbox_tm_1.value.toUpperCase();
-  var TestVar2 = form.inputbox_tm_2.value.toUpperCase();
-  var TestVar3 = form.inputbox_tm_3.value.toUpperCase();
-  var TestVar4 = form.inputbox_tm_4.value.toUpperCase();
-  var TestVar5 = form.inputbox_tm_5.value.toUpperCase();
-  var TestVar6 = form.inputbox_tm_6.value.toUpperCase();
-  form.outputbox_tm.value =  "The truck model is: " + TestVar3 + TestVar5 + TestVar1 + TestVar5 + TestVar3 + TestVar2 + " " + TestVar3 + TestVar2 + TestVar6 + TestVar5 + TestVar4 + TestVar2;
+function updateTM1 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("tm_o_3").value = TestVar;
 }
-function clearGuessTM (form) {
-  form.inputbox_tm_1.value = "";
-  form.inputbox_tm_2.value = "";
-  form.inputbox_tm_3.value = "";
-  form.inputbox_tm_4.value = "";
-  form.inputbox_tm_5.value = "";
-  form.inputbox_tm_6.value = "";
-  form.outputbox_tm.value = "";
+function updateTM2 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("tm_o_6").value = TestVar;
+  document.getElementById("tm_o_8").value = TestVar;
+  document.getElementById("tm_o_12").value = TestVar;
 }
-function displayGuessAuthor (form) {
-  var TestVar1 = form.inputbox_a_1.value.toUpperCase();
-  var TestVar2 = form.inputbox_a_2.value.toUpperCase();
-  var TestVar3 = form.inputbox_a_3.value.toUpperCase();
-  var TestVar4 = form.inputbox_a_4.value.toUpperCase();
-  var TestVar5 = form.inputbox_a_5.value.toUpperCase();
-  var TestVar6 = form.inputbox_a_6.value.toUpperCase();
-  form.outputbox_a.value =  "The author is: " + TestVar3 + TestVar5 + TestVar6 + " " + TestVar1 + TestVar3 + TestVar5 + TestVar2 + TestVar1 + TestVar4 + TestVar3 + TestVar6;
+function updateTM3 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("tm_o_1").value = TestVar;
+  document.getElementById("tm_o_5").value = TestVar;
+  document.getElementById("tm_o_7").value = TestVar;
 }
-function clearGuessAuthor (form) {
-  form.inputbox_a_1.value = "";
-  form.inputbox_a_2.value = "";
-  form.inputbox_a_3.value = "";
-  form.inputbox_a_4.value = "";
-  form.inputbox_a_5.value = "";
-  form.inputbox_a_6.value = "";
-  form.outputbox_a.value = "";
+function updateTM4 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("tm_o_11").value = TestVar;
 }
-function displayGuessST (form) {
-  var TestVar1 = form.inputbox_st_1.value.toUpperCase();
-  var TestVar2 = form.inputbox_st_2.value.toUpperCase();
-  var TestVar3 = form.inputbox_st_3.value.toUpperCase();
-  var TestVar4 = form.inputbox_st_4.value.toUpperCase();
-  var TestVar5 = form.inputbox_st_5.value.toUpperCase();
-  var TestVar6 = form.inputbox_st_6.value.toUpperCase();
-  form.outputbox_st.value =  "The sports team is: " + TestVar6 + TestVar1 + TestVar3 + TestVar3 + TestVar1 + TestVar5 + TestVar5 + TestVar1 + TestVar1 +  " " + TestVar6 + TestVar4 + TestVar6 + TestVar2 + TestVar3 + TestVar5;
+function updateTM5 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("tm_o_2").value = TestVar;
+  document.getElementById("tm_o_4").value = TestVar;
+  document.getElementById("tm_o_10").value = TestVar;
 }
-function clearGuessST (form) {
-  form.inputbox_st_1.value = "";
-  form.inputbox_st_2.value = "";
-  form.inputbox_st_3.value = "";
-  form.inputbox_st_4.value = "";
-  form.inputbox_st_5.value = "";
-  form.inputbox_st_6.value = "";
-  form.outputbox_st.value = "";
+function updateTM6 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("tm_o_9").value = TestVar;
+}
+function clearGuessTM () {
+  document.getElementById("tm_i_1").value = "";
+  document.getElementById("tm_i_2").value = "";
+  document.getElementById("tm_i_3").value = "";
+  document.getElementById("tm_i_4").value = "";
+  document.getElementById("tm_i_5").value = "";
+  document.getElementById("tm_i_6").value = "";
+  document.getElementById("tm_o_1").value = "";
+  document.getElementById("tm_o_2").value = "";
+  document.getElementById("tm_o_3").value = "";
+  document.getElementById("tm_o_4").value = "";
+  document.getElementById("tm_o_5").value = "";
+  document.getElementById("tm_o_6").value = "";
+  document.getElementById("tm_o_7").value = "";
+  document.getElementById("tm_o_8").value = "";
+  document.getElementById("tm_o_9").value = "";
+  document.getElementById("tm_o_10").value = "";
+  document.getElementById("tm_o_11").value = "";
+  document.getElementById("tm_o_12").value = "";
+}
+function updateA1 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("a_o_4").value = TestVar;
+  document.getElementById("a_o_8").value = TestVar;
+}
+function updateA2 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("a_o_7").value = TestVar;
+}
+function updateA3 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("a_o_1").value = TestVar;
+  document.getElementById("a_o_5").value = TestVar;
+  document.getElementById("a_o_10").value = TestVar;
+}
+function updateA4 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("a_o_9").value = TestVar;
+}
+function updateA5 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("a_o_2").value = TestVar;
+  document.getElementById("a_o_6").value = TestVar;
+}
+function updateA6 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("a_o_3").value = TestVar;
+  document.getElementById("a_o_11").value = TestVar;
+}
+function clearGuessAuthor () {
+  document.getElementById("a_i_1").value = "";
+  document.getElementById("a_i_2").value = "";
+  document.getElementById("a_i_3").value = "";
+  document.getElementById("a_i_4").value = "";
+  document.getElementById("a_i_5").value = "";
+  document.getElementById("a_i_6").value = "";
+  document.getElementById("a_o_1").value = "";
+  document.getElementById("a_o_2").value = "";
+  document.getElementById("a_o_3").value = "";
+  document.getElementById("a_o_4").value = "";
+  document.getElementById("a_o_5").value = "";
+  document.getElementById("a_o_6").value = "";
+  document.getElementById("a_o_7").value = "";
+  document.getElementById("a_o_8").value = "";
+  document.getElementById("a_o_9").value = "";
+  document.getElementById("a_o_10").value = "";
+  document.getElementById("a_o_11").value = "";
+}
+function updateST1 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("st_o_2").value = TestVar;
+  document.getElementById("st_o_5").value = TestVar;
+  document.getElementById("st_o_8").value = TestVar;
+  document.getElementById("st_o_9").value = TestVar;
+}
+function updateST2 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("st_o_13").value = TestVar;
+}
+function updateST3 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("st_o_3").value = TestVar;
+  document.getElementById("st_o_4").value = TestVar;
+  document.getElementById("st_o_14").value = TestVar;
+}
+function updateST4 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("st_o_11").value = TestVar;
+}
+function updateST5 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("st_o_6").value = TestVar;
+  document.getElementById("st_o_7").value = TestVar;
+  document.getElementById("st_o_15").value = TestVar;
+}
+function updateST6 (x) {
+  var TestVar = x.toUpperCase();
+  document.getElementById("st_o_1").value = TestVar;
+  document.getElementById("st_o_10").value = TestVar;
+  document.getElementById("st_o_12").value = TestVar;
+}
+function clearGuessST () {
+  document.getElementById("st_i_1").value = "";
+  document.getElementById("st_i_2").value = "";
+  document.getElementById("st_i_3").value = "";
+  document.getElementById("st_i_4").value = "";
+  document.getElementById("st_i_5").value = "";
+  document.getElementById("st_i_6").value = "";
+  document.getElementById("st_o_1").value = "";
+  document.getElementById("st_o_2").value = "";
+  document.getElementById("st_o_3").value = "";
+  document.getElementById("st_o_4").value = "";
+  document.getElementById("st_o_5").value = "";
+  document.getElementById("st_o_6").value = "";
+  document.getElementById("st_o_7").value = "";
+  document.getElementById("st_o_8").value = "";
+  document.getElementById("st_o_9").value = "";
+  document.getElementById("st_o_10").value = "";
+  document.getElementById("st_o_11").value = "";
+  document.getElementById("st_o_12").value = "";
+  document.getElementById("st_o_13").value = "";
+  document.getElementById("st_o_14").value = "";
+  document.getElementById("st_o_15").value = "";
 }
 </script>
 </head>
@@ -65,35 +165,44 @@ function clearGuessST (form) {
 <img src = "Die1.png" width = "20">
 <img src = "Die5.png" width = "20">
 <img src = "Die3.png" width = "20">
-<img src = "Die2.png" width = "20"><br>
+<img src = "Die2.png" width = "20"><img src = "blank.png" width = "20">
 <img src = "Die3.png" width = "20">
 <img src = "Die2.png" width = "20">
 <img src = "Die6.png" width = "20">
 <img src = "Die5.png" width = "20">
 <img src = "Die4.png" width = "20">
 <img src = "Die2.png" width = "20"><br>
+<input type = "text" id = "tm_o_1" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_2" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_3" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_4" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_5" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_6" style = "width:20px" disabled = "disabled" readonly="readonly">
+<img src = "blank.png" width = "17">
+<input type = "text" id = "tm_o_7" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_8" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_9" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_10" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_11" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_12" style = "width:20px" disabled = "disabled" readonly="readonly"><br>
 <p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a truck model.</p>
-<form name = "truck_model" action = "" method = "get">
 Enter your guess for <img src = "Die1.png" width = "20">: 
-<input type = "text" name = "inputbox_tm_1" value = "" style = "width:30px"><p>
+<input type = "text" id = "tm_i_1" value = "" style = "width:20px" onkeyup="updateTM1(this.value);"><p>
 Enter your guess for <img src = "Die2.png" width = "20">: 
-<input type = "text" name = "inputbox_tm_2" value = "" style = "width:30px"><p>
+<input type = "text" id = "tm_i_2" value = "" style = "width:20px" onkeyup="updateTM2(this.value);"><p>
 Enter your guess for <img src = "Die3.png" width = "20">: 
-<input type = "text" name = "inputbox_tm_3" value = "" style = "width:30px"><p>
+<input type = "text" id = "tm_i_3" value = "" style = "width:20px" onkeyup="updateTM3(this.value);"><p>
 Enter your guess for <img src = "Die4.png" width = "20">: 
-<input type = "text" name = "inputbox_tm_4" value = "" style = "width:30px"><p>
+<input type = "text" id = "tm_i_4" value = "" style = "width:20px" onkeyup="updateTM4(this.value);"><p>
 Enter your guess for <img src = "Die5.png" width = "20">: 
-<input type = "text" name = "inputbox_tm_5" value = "" style = "width:30px"><p>
+<input type = "text" id = "tm_i_5" value = "" style = "width:20px" onkeyup="updateTM5(this.value);"><p>
 Enter your guess for <img src = "Die6.png" width = "20">: 
-<input type = "text" name = "inputbox_tm_6" value = "" style = "width:30px"><p>
-<input type = "button" name = "button" value = "Solve Truck Model Puzzle" onClick = "displayGuessTM(this.form)">
-<input type = "button" name = "button" value = "Clear Truck Model Puzzle" onClick = "clearGuessTM(this.form)"><br>
-<input type = "text" name = "outputbox_tm" value = "" style = "width:310px"><p>
-</form>
+<input type = "text" id = "tm_i_6" value = "" style = "width:20px" onkeyup="updateTM6(this.value);"><p>
+<input type = "button" value = "Clear Truck Model Puzzle" onClick = "clearGuessTM();">
 <h3>Author Puzzle</h3>
 <img src = "Die3.png" width = "20">
 <img src = "Die5.png" width = "20">
-<img src = "Die6.png" width = "20"><br>
+<img src = "Die6.png" width = "20"><img src = "blank.png" width = "20">
 <img src = "Die1.png" width = "20">
 <img src = "Die3.png" width = "20">
 <img src = "Die5.png" width = "20">
@@ -102,24 +211,32 @@ Enter your guess for <img src = "Die6.png" width = "20">:
 <img src = "Die4.png" width = "20">
 <img src = "Die3.png" width = "20">
 <img src = "Die6.png" width = "20"><br>
+<input type = "text" id = "a_o_1" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_2" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_3" style = "width:20px" disabled = "disabled" readonly="readonly">
+<img src = "blank.png" width = "17">
+<input type = "text" id = "a_o_4" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_5" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_6" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_7" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_8" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_9" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_10" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_11" style = "width:20px" disabled = "disabled" readonly="readonly">
 <p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of an author.</p>
-<form name = "author" action = "" method = "get">
 Enter your guess for <img src = "Die1.png" width = "20">: 
-<input type = "text" name = "inputbox_a_1" value = "" style = "width:30px"><p>
+<input type = "text" id = "a_i_1" value = "" style = "width:20px" onkeyup="updateA1(this.value);"><p>
 Enter your guess for <img src = "Die2.png" width = "20">: 
-<input type = "text" name = "inputbox_a_2" value = "" style = "width:30px"><p>
+<input type = "text" id = "a_i_2" value = "" style = "width:20px" onkeyup="updateA2(this.value);"><p>
 Enter your guess for <img src = "Die3.png" width = "20">: 
-<input type = "text" name = "inputbox_a_3" value = "" style = "width:30px"><p>
+<input type = "text" id = "a_i_3" value = "" style = "width:20px" onkeyup="updateA3(this.value);"><p>
 Enter your guess for <img src = "Die4.png" width = "20">: 
-<input type = "text" name = "inputbox_a_4" value = "" style = "width:30px"><p>
+<input type = "text" id = "a_i_4" value = "" style = "width:20px" onkeyup="updateA4(this.value);"><p>
 Enter your guess for <img src = "Die5.png" width = "20">: 
-<input type = "text" name = "inputbox_a_5" value = "" style = "width:30px"><p>
+<input type = "text" id = "a_i_5" value = "" style = "width:20px" onkeyup="updateA5(this.value);"><p>
 Enter your guess for <img src = "Die6.png" width = "20">: 
-<input type = "text" name = "inputbox_a_6" value = "" style = "width:30px"><p>
-<input type = "button" name = "button" value = "Solve Author Puzzle" onClick = "displayGuessAuthor(this.form)">
-<input type = "button" name = "button" value = "Clear Author Puzzle" onClick = "clearGuessAuthor(this.form)"><br>
-<input type = "text" name = "outputbox_a" value = "" style = "width:310px"><p>
-</form>
+<input type = "text" id = "a_i_6" value = "" style = "width:20px" onkeyup="updateA6(this.value);"><p>
+<input type = "button" value = "Clear Author Puzzle" onClick = "clearGuessAuthor();">
 <h3>Sports Team Puzzle</h3>
 <img src = "Die6.png" width = "20">
 <img src = "Die1.png" width = "20">
@@ -129,30 +246,42 @@ Enter your guess for <img src = "Die6.png" width = "20">:
 <img src = "Die5.png" width = "20">
 <img src = "Die5.png" width = "20">
 <img src = "Die1.png" width = "20">
-<img src = "Die1.png" width = "20"><br>
+<img src = "Die1.png" width = "20"><img src = "blank.png" width = "20">
 <img src = "Die6.png" width = "20">
 <img src = "Die4.png" width = "20">
 <img src = "Die6.png" width = "20">
 <img src = "Die2.png" width = "20">
 <img src = "Die3.png" width = "20">
 <img src = "Die5.png" width = "20"><br>
+<input type = "text" id = "st_o_1" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_2" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_3" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_4" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_5" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_6" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_7" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_8" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_9" style = "width:20px" disabled = "disabled" readonly="readonly">
+<img src = "blank.png" width = "17">
+<input type = "text" id = "st_o_10" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_11" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_12" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_13" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_14" style = "width:20px" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_15" style = "width:20px" disabled = "disabled" readonly="readonly">
 <p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a sports team.</p>
-<form name = "sports_team" action = "" method = "get">
 Enter your guess for <img src = "Die1.png" width = "20">: 
-<input type = "text" name = "inputbox_st_1" value = "" style = "width:30px"><p>
+<input type = "text" id = "st_i_1" value = "" style = "width:20px" onkeyup="updateST1(this.value);"><p>
 Enter your guess for <img src = "Die2.png" width = "20">: 
-<input type = "text" name = "inputbox_st_2" value = "" style = "width:30px"><p>
+<input type = "text" id = "st_i_2" value = "" style = "width:20px" onkeyup="updateST2(this.value);"><p>
 Enter your guess for <img src = "Die3.png" width = "20">: 
-<input type = "text" name = "inputbox_st_3" value = "" style = "width:30px"><p>
+<input type = "text" id = "st_i_3" value = "" style = "width:20px" onkeyup="updateST3(this.value);"><p>
 Enter your guess for <img src = "Die4.png" width = "20">: 
-<input type = "text" name = "inputbox_st_4" value = "" style = "width:30px"><p>
+<input type = "text" id = "st_i_4" value = "" style = "width:20px" onkeyup="updateST4(this.value);"><p>
 Enter your guess for <img src = "Die5.png" width = "20">: 
-<input type = "text" name = "inputbox_st_5" value = "" style = "width:30px"><p>
+<input type = "text" id = "st_i_5" value = "" style = "width:20px" onkeyup="updateST5(this.value);"><p>
 Enter your guess for <img src = "Die6.png" width = "20">: 
-<input type = "text" name = "inputbox_st_6" value = "" style = "width:30px"><p>
-<input type = "button" name = "button" value = "Solve Sports Team Puzzle" onClick = "displayGuessST(this.form)">
-<input type = "button" name = "button" value = "Clear Sports Team Puzzle" onClick = "clearGuessST(this.form)"><br>
-<input type = "text" name = "outputbox_st" value = "" style = "width:310px"><p>
-</form>
+<input type = "text" id = "st_i_6" value = "" style = "width:20px" onkeyup="updateST6(this.value);"><p>
+<input type = "button" value = "Clear Sports Team Puzzle" onClick = "clearGuessST();">
 </body>
 </html>
