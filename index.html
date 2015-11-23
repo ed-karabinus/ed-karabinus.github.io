@@ -1,10 +1,12 @@
 
 <!-- Webpage by Ed Karabinus. -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel = "stylesheet" type = "text/css" href = "style.css">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>Display your guesses at these dice puzzles!</title>
-<script language = "Javascript">
+<script type  = "text/javascript">
 function updateTM1 (x) {
   var TestVar = x.toUpperCase();
   document.getElementById("tm_o_3").value = TestVar;
@@ -208,130 +210,139 @@ function checkGuessST () {
 </head>
 <body>
 <h3>Truck Model Puzzle</h3>
-<img src = "Die3.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die1.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die2.png" width = "20"><img src = "blank.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die2.png" width = "20">
-<img src = "Die6.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die4.png" width = "20">
-<img src = "Die2.png" width = "20"><br>
-<input type = "text" id = "tm_o_1" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_2" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_3" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_4" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_5" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_6" style = "width:20px" disabled = "disabled" readonly="readonly">
-<img src = "blank.png" width = "16">
-<input type = "text" id = "tm_o_7" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_8" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_9" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_10" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_11" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_12" style = "width:20px" disabled = "disabled" readonly="readonly"><br>
+<div class = "response">
+<input type = "text" id = "tm_o_1" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_2" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_3" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_4" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_5" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_6" disabled = "disabled" readonly="readonly">
+<img src = "blank.png" alt = "Empty image for formatting">
+<input type = "text" id = "tm_o_7" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_8" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_9" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_10" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_11" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "tm_o_12" disabled = "disabled" readonly="readonly"><br>
+<div>
+<img src="Die3.png" alt="Die with 3 face showing">
+<img src="Die5.png" alt="Die with 5 face showing">
+<img src="Die1.png" alt="Die with 1 face showing">
+<img src="Die5.png" alt="Die with 5 face showing">
+<img src="Die3.png" alt="Die with 3 face showing">
+<img src="Die2.png" alt="Die with 2 face showing">
+<img src="blank.png" alt="Empty image for formatting">
+<img src="Die3.png" alt="Die with 3 face showing">
+<img src="Die2.png" alt="Die with 2 face showing">
+<img src="Die6.png" alt="Die with 6 face showing">
+<img src="Die5.png" alt="Die with 5 face showing">
+<img src="Die4.png" alt="Die with 4 face showing">
+<img src="Die2.png" alt="Die with 2 face showing"><br>
 <p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a truck model.</p>
-Enter your guess for <img src = "Die1.png" width = "20" style:"float: left;">: 
-<input type = "text" id = "tm_i_1" value = "" style = "width:20px" onkeyup="updateTM1(this.value);"><p>
-Enter your guess for <img src = "Die2.png" width = "20">: 
-<input type = "text" id = "tm_i_2" value = "" style = "width:20px" onkeyup="updateTM2(this.value);"><p>
-Enter your guess for <img src = "Die3.png" width = "20">: 
-<input type = "text" id = "tm_i_3" value = "" style = "width:20px" onkeyup="updateTM3(this.value);"><p>
-Enter your guess for <img src = "Die4.png" width = "20">: 
-<input type = "text" id = "tm_i_4" value = "" style = "width:20px" onkeyup="updateTM4(this.value);"><p>
-Enter your guess for <img src = "Die5.png" width = "20">: 
-<input type = "text" id = "tm_i_5" value = "" style = "width:20px" onkeyup="updateTM5(this.value);"><p>
-Enter your guess for <img src = "Die6.png" width = "20">: 
-<input type = "text" id = "tm_i_6" value = "" style = "width:20px" onkeyup="updateTM6(this.value);"><p>
+<p>Enter your guess for <img src = "Die1.png" alt = "Die with 1 face showing">: 
+<input type = "text" id = "tm_i_1" value = "" onkeyup="updateTM1(this.value);"></p>
+<p>Enter your guess for <img src = "Die2.png" alt = "Die with 2 face showing">: 
+<input type = "text" id = "tm_i_2" value = "" onkeyup="updateTM2(this.value);"></p>
+<p>Enter your guess for <img src = "Die3.png" alt = "Die with 3 face showing">: 
+<input type = "text" id = "tm_i_3" value = "" onkeyup="updateTM3(this.value);"></p>
+<p>Enter your guess for <img src = "Die4.png" alt = "Die with 4 face showing">: 
+<input type = "text" id = "tm_i_4" value = "" onkeyup="updateTM4(this.value);"></p>
+<p>Enter your guess for <img src = "Die5.png" alt = "Die with 5 face showing">: 
+<input type = "text" id = "tm_i_5" value = "" onkeyup="updateTM5(this.value);"></p>
+<p>Enter your guess for <img src = "Die6.png" alt = "Die with 6 face showing">: 
+<input type = "text" id = "tm_i_6" value = "" onkeyup="updateTM6(this.value);"></p>
 <input type = "button" value = "Clear Truck Model Puzzle" onClick = "clearGuessTM();">
 <input type = "button" value = "Check Truck Model Puzzle" onClick = "checkGuessTM();">
 <h3>Author Puzzle</h3>
-<img src = "Die3.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die6.png" width = "20"><img src = "blank.png" width = "20">
-<img src = "Die1.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die2.png" width = "20">
-<img src = "Die1.png" width = "20">
-<img src = "Die4.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die6.png" width = "20"><br>
-<input type = "text" id = "a_o_1" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_2" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_3" style = "width:20px" disabled = "disabled" readonly="readonly">
-<img src = "blank.png" width = "16">
-<input type = "text" id = "a_o_4" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_5" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_6" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_7" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_8" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_9" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_10" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_11" style = "width:20px" disabled = "disabled" readonly="readonly">
+<div class = "response">
+<input type = "text" id = "a_o_1" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_2" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_3" disabled = "disabled" readonly="readonly">
+<img src = "blank.png" alt = "Empty image for formatting">
+<input type = "text" id = "a_o_4" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_5" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_6" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_7" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_8" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_9" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_10" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "a_o_11" disabled = "disabled" readonly="readonly">
+</div>
+<img src = "Die3.png" alt = "Die with 3 face showing">
+<img src = "Die5.png" alt = "Die with 5 face showing">
+<img src = "Die6.png" alt = "Die with 6 face showing">
+<img src = "blank.png" alt = "Empty image for formatting">
+<img src = "Die1.png" alt = "Die with 1 face showing">
+<img src = "Die3.png" alt = "Die with 3 face showing">
+<img src = "Die5.png" alt = "Die with 5 face showing">
+<img src = "Die2.png" alt = "Die with 2 face showing">
+<img src = "Die1.png" alt = "Die with 1 face showing">
+<img src = "Die4.png" alt = "Die with 4 face showing">
+<img src = "Die3.png" alt = "Die with 3 face showing">
+<img src = "Die6.png" alt = "Die with 6 face showing"><br>
 <p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of an author.</p>
-Enter your guess for <img src = "Die1.png" width = "20">: 
-<input type = "text" id = "a_i_1" value = "" style = "width:20px" onkeyup="updateA1(this.value);"><p>
-Enter your guess for <img src = "Die2.png" width = "20">: 
-<input type = "text" id = "a_i_2" value = "" style = "width:20px" onkeyup="updateA2(this.value);"><p>
-Enter your guess for <img src = "Die3.png" width = "20">: 
-<input type = "text" id = "a_i_3" value = "" style = "width:20px" onkeyup="updateA3(this.value);"><p>
-Enter your guess for <img src = "Die4.png" width = "20">: 
-<input type = "text" id = "a_i_4" value = "" style = "width:20px" onkeyup="updateA4(this.value);"><p>
-Enter your guess for <img src = "Die5.png" width = "20">: 
-<input type = "text" id = "a_i_5" value = "" style = "width:20px" onkeyup="updateA5(this.value);"><p>
-Enter your guess for <img src = "Die6.png" width = "20">: 
-<input type = "text" id = "a_i_6" value = "" style = "width:20px" onkeyup="updateA6(this.value);"><p>
+<p>Enter your guess for <img src = "Die1.png" alt = "Die with 1 face showing">: 
+<input type = "text" id = "a_i_1" value = "" onkeyup="updateA1(this.value);"></p>
+<p>Enter your guess for <img src = "Die2.png" alt = "Die with 2 face showing">: 
+<input type = "text" id = "a_i_2" value = "" onkeyup="updateA2(this.value);"></p>
+<p>Enter your guess for <img src = "Die3.png" alt = "Die with 3 face showing">: 
+<input type = "text" id = "a_i_3" value = "" onkeyup="updateA3(this.value);"></p>
+<p>Enter your guess for <img src = "Die4.png" alt = "Die with 4 face showing">: 
+<input type = "text" id = "a_i_4" value = "" onkeyup="updateA4(this.value);"></p>
+<p>Enter your guess for <img src = "Die5.png" alt = "Die with 5 face showing">: 
+<input type = "text" id = "a_i_5" value = "" onkeyup="updateA5(this.value);"></p>
+<p>Enter your guess for <img src = "Die6.png" alt = "Die with 6 face showing">: 
+<input type = "text" id = "a_i_6" value = "" onkeyup="updateA6(this.value);"></p>
 <input type = "button" value = "Clear Author Puzzle" onClick = "clearGuessAuthor();">
 <input type = "button" value = "Check Author Puzzle" onClick = "checkGuessAuthor();">
 <h3>Sports Team Puzzle</h3>
-<img src = "Die6.png" width = "20">
-<img src = "Die1.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die1.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die5.png" width = "20">
-<img src = "Die1.png" width = "20">
-<img src = "Die1.png" width = "20"><img src = "blank.png" width = "20">
-<img src = "Die6.png" width = "20">
-<img src = "Die4.png" width = "20">
-<img src = "Die6.png" width = "20">
-<img src = "Die2.png" width = "20">
-<img src = "Die3.png" width = "20">
-<img src = "Die5.png" width = "20"><br>
-<input type = "text" id = "st_o_1" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_2" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_3" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_4" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_5" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_6" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_7" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_8" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_9" style = "width:20px" disabled = "disabled" readonly="readonly">
-<img src = "blank.png" width = "16">
-<input type = "text" id = "st_o_10" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_11" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_12" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_13" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_14" style = "width:20px" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_15" style = "width:20px" disabled = "disabled" readonly="readonly">
+<div class = "response">
+<input type = "text" id = "st_o_1" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_2" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_3" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_4" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_5" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_6" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_7" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_8" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_9" disabled = "disabled" readonly="readonly">
+<img src = "blank.png" alt = "Empty image for formatting">
+<input type = "text" id = "st_o_10" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_11" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_12" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_13" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_14" disabled = "disabled" readonly="readonly">
+<input type = "text" id = "st_o_15" disabled = "disabled" readonly="readonly">
+</div>
+<img src = "Die6.png" alt = "Die with 6 face showing">
+<img src = "Die1.png" alt = "Die with 1 face showing">
+<img src = "Die3.png" alt = "Die with 3 face showing">
+<img src = "Die3.png" alt = "Die with 3 face showing">
+<img src = "Die1.png" alt = "Die with 1 face showing">
+<img src = "Die5.png" alt = "Die with 5 face showing">
+<img src = "Die5.png" alt = "Die with 5 face showing">
+<img src = "Die1.png" alt = "Die with 1 face showing">
+<img src = "Die1.png" alt = "Die with 1 face showing">
+<img src = "blank.png" alt = "Empty image for formatting">
+<img src = "Die6.png" alt = "Die with 6 face showing">
+<img src = "Die4.png" alt = "Die with 4 face showing">
+<img src = "Die6.png" alt = "Die with 6 face showing">
+<img src = "Die2.png" alt = "Die with 2 face showing">
+<img src = "Die3.png" alt = "Die with 3 face showing">
+<img src = "Die5.png" alt = "Die with 5 face showing"><br>
 <p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a sports team.</p>
-Enter your guess for <img src = "Die1.png" width = "20">: 
-<input type = "text" id = "st_i_1" value = "" style = "width:20px" onkeyup="updateST1(this.value);"><p>
-Enter your guess for <img src = "Die2.png" width = "20">: 
-<input type = "text" id = "st_i_2" value = "" style = "width:20px" onkeyup="updateST2(this.value);"><p>
-Enter your guess for <img src = "Die3.png" width = "20">: 
-<input type = "text" id = "st_i_3" value = "" style = "width:20px" onkeyup="updateST3(this.value);"><p>
-Enter your guess for <img src = "Die4.png" width = "20">: 
-<input type = "text" id = "st_i_4" value = "" style = "width:20px" onkeyup="updateST4(this.value);"><p>
-Enter your guess for <img src = "Die5.png" width = "20">: 
-<input type = "text" id = "st_i_5" value = "" style = "width:20px" onkeyup="updateST5(this.value);"><p>
-Enter your guess for <img src = "Die6.png" width = "20">: 
-<input type = "text" id = "st_i_6" value = "" style = "width:20px" onkeyup="updateST6(this.value);"><p>
+<p>Enter your guess for <img src = "Die1.png" alt = "Die with 1 face showing">: 
+<input type = "text" id = "st_i_1" value = "" onkeyup="updateST1(this.value);"></p>
+<p>Enter your guess for <img src = "Die2.png" alt = "Die with 2 face showing">: 
+<input type = "text" id = "st_i_2" value = "" onkeyup="updateST2(this.value);"></p>
+<p>Enter your guess for <img src = "Die3.png" alt = "Die with 3 face showing">: 
+<input type = "text" id = "st_i_3" value = "" onkeyup="updateST3(this.value);"></p>
+<p>Enter your guess for <img src = "Die4.png" alt = "Die with 4 face showing">: 
+<input type = "text" id = "st_i_4" value = "" onkeyup="updateST4(this.value);"></p>
+<p>Enter your guess for <img src = "Die5.png" alt = "Die with 5 face showing">: 
+<input type = "text" id = "st_i_5" value = "" onkeyup="updateST5(this.value);"></p>
+<p>Enter your guess for <img src = "Die6.png" alt = "Die with 6 face showing">: 
+<input type = "text" id = "st_i_6" value = "" onkeyup="updateST6(this.value);"></p>
 <input type = "button" value = "Clear Sports Team Puzzle" onClick = "clearGuessST();">
 <input type = "button" value = "Check Sports Team Puzzle" onClick = "checkGuessST();">
 </body>
