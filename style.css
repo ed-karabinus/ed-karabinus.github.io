@@ -134,6 +134,13 @@ h1 {
   text-wrap: pretty;
 }
 
+.availability {
+  max-width: 38rem;
+  margin: 0.75rem 0 0;
+  font-weight: 600;
+  text-wrap: pretty;
+}
+
 .site-header nav ul {
   display: flex;
   flex-wrap: wrap;
