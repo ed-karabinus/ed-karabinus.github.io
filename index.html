@@ -1,348 +1,172 @@
-
-<!DOCTYPE html>
-<html lang = "en">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset = "utf-8">
-<link rel = "stylesheet" type = "text/css" href = "style.css">
-<title>Display your guesses at these dice puzzles!</title>
-<script type  = "text/javascript">
-function updateTM1 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("tm_o_3").value = TestVar;
-}
-function updateTM2 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("tm_o_6").value = TestVar;
-  document.getElementById("tm_o_8").value = TestVar;
-  document.getElementById("tm_o_12").value = TestVar;
-}
-function updateTM3 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("tm_o_1").value = TestVar;
-  document.getElementById("tm_o_5").value = TestVar;
-  document.getElementById("tm_o_7").value = TestVar;
-}
-function updateTM4 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("tm_o_11").value = TestVar;
-}
-function updateTM5 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("tm_o_2").value = TestVar;
-  document.getElementById("tm_o_4").value = TestVar;
-  document.getElementById("tm_o_10").value = TestVar;
-}
-function updateTM6 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("tm_o_9").value = TestVar;
-}
-function clearGuessTM () {
-  document.getElementById("tm_i_1").value = "";
-  document.getElementById("tm_i_2").value = "";
-  document.getElementById("tm_i_3").value = "";
-  document.getElementById("tm_i_4").value = "";
-  document.getElementById("tm_i_5").value = "";
-  document.getElementById("tm_i_6").value = "";
-  document.getElementById("tm_o_1").value = "";
-  document.getElementById("tm_o_2").value = "";
-  document.getElementById("tm_o_3").value = "";
-  document.getElementById("tm_o_4").value = "";
-  document.getElementById("tm_o_5").value = "";
-  document.getElementById("tm_o_6").value = "";
-  document.getElementById("tm_o_7").value = "";
-  document.getElementById("tm_o_8").value = "";
-  document.getElementById("tm_o_9").value = "";
-  document.getElementById("tm_o_10").value = "";
-  document.getElementById("tm_o_11").value = "";
-  document.getElementById("tm_o_12").value = "";
-}
-function checkGuessTM() {
-  var TestVar1 = document.getElementById("tm_i_1").value.toUpperCase();
-  var TestVar2 = document.getElementById("tm_i_2").value.toUpperCase();
-  var TestVar3 = document.getElementById("tm_i_3").value.toUpperCase();
-  var TestVar4 = document.getElementById("tm_i_4").value.toUpperCase();
-  var TestVar5 = document.getElementById("tm_i_5").value.toUpperCase();
-  var TestVar6 = document.getElementById("tm_i_6").value.toUpperCase();
-  if (TestVar1 === "Y" && TestVar2 === "A" && TestVar3 === "T" &&
-      TestVar4 === "M" && TestVar5 === "O" && TestVar6 === "C") {
-    alert ("Correct! Great job.")
-  }
-  else {
-    alert ("Try again! Your guess is incorrect.")
-  }
-}
-function updateA1 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("a_o_4").value = TestVar;
-  document.getElementById("a_o_8").value = TestVar;
-}
-function updateA2 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("a_o_7").value = TestVar;
-}
-function updateA3 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("a_o_1").value = TestVar;
-  document.getElementById("a_o_5").value = TestVar;
-  document.getElementById("a_o_10").value = TestVar;
-}
-function updateA4 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("a_o_9").value = TestVar;
-}
-function updateA5 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("a_o_2").value = TestVar;
-  document.getElementById("a_o_6").value = TestVar;
-}
-function updateA6 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("a_o_3").value = TestVar;
-  document.getElementById("a_o_11").value = TestVar;
-}
-function clearGuessAuthor () {
-  document.getElementById("a_i_1").value = "";
-  document.getElementById("a_i_2").value = "";
-  document.getElementById("a_i_3").value = "";
-  document.getElementById("a_i_4").value = "";
-  document.getElementById("a_i_5").value = "";
-  document.getElementById("a_i_6").value = "";
-  document.getElementById("a_o_1").value = "";
-  document.getElementById("a_o_2").value = "";
-  document.getElementById("a_o_3").value = "";
-  document.getElementById("a_o_4").value = "";
-  document.getElementById("a_o_5").value = "";
-  document.getElementById("a_o_6").value = "";
-  document.getElementById("a_o_7").value = "";
-  document.getElementById("a_o_8").value = "";
-  document.getElementById("a_o_9").value = "";
-  document.getElementById("a_o_10").value = "";
-  document.getElementById("a_o_11").value = "";
-}
-function checkGuessAuthor () {
-  var TestVar1 = document.getElementById("a_i_1").value.toUpperCase();
-  var TestVar2 = document.getElementById("a_i_2").value.toUpperCase();
-  var TestVar3 = document.getElementById("a_i_3").value.toUpperCase();
-  var TestVar4 = document.getElementById("a_i_4").value.toUpperCase();
-  var TestVar5 = document.getElementById("a_i_5").value.toUpperCase();
-  var TestVar6 = document.getElementById("a_i_6").value.toUpperCase();
-  if (TestVar1 === "B" && TestVar2 === "D" && TestVar3 === "R" &&
-      TestVar4 === "U" && TestVar5 === "A" && TestVar6 === "Y") {
-    alert ("Correct! Great job.")
-  }
-  else {
-    alert ("Try again! Your guess is incorrect.")
-  }
-}
-function updateST1 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("st_o_2").value = TestVar;
-  document.getElementById("st_o_5").value = TestVar;
-  document.getElementById("st_o_8").value = TestVar;
-  document.getElementById("st_o_9").value = TestVar;
-}
-function updateST2 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("st_o_13").value = TestVar;
-}
-function updateST3 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("st_o_3").value = TestVar;
-  document.getElementById("st_o_4").value = TestVar;
-  document.getElementById("st_o_14").value = TestVar;
-}
-function updateST4 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("st_o_11").value = TestVar;
-}
-function updateST5 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("st_o_6").value = TestVar;
-  document.getElementById("st_o_7").value = TestVar;
-  document.getElementById("st_o_15").value = TestVar;
-}
-function updateST6 (x) {
-  var TestVar = x.toUpperCase();
-  document.getElementById("st_o_1").value = TestVar;
-  document.getElementById("st_o_10").value = TestVar;
-  document.getElementById("st_o_12").value = TestVar;
-}
-function clearGuessST () {
-  document.getElementById("st_i_1").value = "";
-  document.getElementById("st_i_2").value = "";
-  document.getElementById("st_i_3").value = "";
-  document.getElementById("st_i_4").value = "";
-  document.getElementById("st_i_5").value = "";
-  document.getElementById("st_i_6").value = "";
-  document.getElementById("st_o_1").value = "";
-  document.getElementById("st_o_2").value = "";
-  document.getElementById("st_o_3").value = "";
-  document.getElementById("st_o_4").value = "";
-  document.getElementById("st_o_5").value = "";
-  document.getElementById("st_o_6").value = "";
-  document.getElementById("st_o_7").value = "";
-  document.getElementById("st_o_8").value = "";
-  document.getElementById("st_o_9").value = "";
-  document.getElementById("st_o_10").value = "";
-  document.getElementById("st_o_11").value = "";
-  document.getElementById("st_o_12").value = "";
-  document.getElementById("st_o_13").value = "";
-  document.getElementById("st_o_14").value = "";
-  document.getElementById("st_o_15").value = "";
-}
-function checkGuessST () {
-  var TestVar1 = document.getElementById("st_i_1").value.toUpperCase();
-  var TestVar2 = document.getElementById("st_i_2").value.toUpperCase();
-  var TestVar3 = document.getElementById("st_i_3").value.toUpperCase();
-  var TestVar4 = document.getElementById("st_i_4").value.toUpperCase();
-  var TestVar5 = document.getElementById("st_i_5").value.toUpperCase();
-  var TestVar6 = document.getElementById("st_i_6").value.toUpperCase();
-  if (TestVar1 === "E" && TestVar2 === "A" && TestVar3 === "N" &&
-      TestVar4 === "I" && TestVar5 === "S" && TestVar6 === "T") {
-    alert ("Correct! Great job.")
-  }
-  else {
-    alert ("Try again! Your guess is incorrect.")
-  }
-}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ed Karabinus · Senior Backend &amp; Infrastructure Engineer</title>
+  <meta name="description" content="Senior backend and infrastructure engineer in San Francisco: distributed systems, data and ML pipelines, and production infrastructure. Six years at Amazon.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101419" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://ed-karabinus.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ed Karabinus">
+  <meta property="og:title" content="Ed Karabinus · Senior Backend &amp; Infrastructure Engineer">
+  <meta property="og:description" content="Senior backend and infrastructure engineer in San Francisco: distributed systems, data and ML pipelines, and production infrastructure. Six years at Amazon.">
+  <meta property="og:url" content="https://ed-karabinus.github.io/">
+  <meta property="og:image" content="https://ed-karabinus.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ed Karabinus, Senior Backend and Infrastructure Engineer, San Francisco">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h3>Truck Model Puzzle</h3>
-<div class = "response">
-<input type = "text" id = "tm_o_1" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_2" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_3" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_4" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_5" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_6" disabled = "disabled" readonly="readonly">
-<img src = "blank.png" alt = "Empty image for formatting">
-<input type = "text" id = "tm_o_7" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_8" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_9" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_10" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_11" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "tm_o_12" disabled = "disabled" readonly="readonly"><br>
-</div>
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die2.png" alt = "Die with 2 face showing">
-<img src = "blank.png" alt = "Empty image for formatting">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die2.png" alt = "Die with 2 face showing">
-<img src = "Die6.png" alt = "Die with 6 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die4.png" alt = "Die with 4 face showing">
-<img src = "Die2.png" alt = "Die with 2 face showing"><br>
-<p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a truck model.</p>
-<p>Enter your guess for <img src = "Die1.png" alt = "Die with 1 face showing">: 
-<input type = "text" id = "tm_i_1" value = "" onkeyup="updateTM1(this.value);"></p>
-<p>Enter your guess for <img src = "Die2.png" alt = "Die with 2 face showing">: 
-<input type = "text" id = "tm_i_2" value = "" onkeyup="updateTM2(this.value);"></p>
-<p>Enter your guess for <img src = "Die3.png" alt = "Die with 3 face showing">: 
-<input type = "text" id = "tm_i_3" value = "" onkeyup="updateTM3(this.value);"></p>
-<p>Enter your guess for <img src = "Die4.png" alt = "Die with 4 face showing">: 
-<input type = "text" id = "tm_i_4" value = "" onkeyup="updateTM4(this.value);"></p>
-<p>Enter your guess for <img src = "Die5.png" alt = "Die with 5 face showing">: 
-<input type = "text" id = "tm_i_5" value = "" onkeyup="updateTM5(this.value);"></p>
-<p>Enter your guess for <img src = "Die6.png" alt = "Die with 6 face showing">: 
-<input type = "text" id = "tm_i_6" value = "" onkeyup="updateTM6(this.value);"></p>
-<input type = "button" value = "Clear Truck Model Puzzle" onClick = "clearGuessTM();">
-<input type = "button" value = "Check Truck Model Puzzle" onClick = "checkGuessTM();">
-<h3>Author Puzzle</h3>
-<div class = "response">
-<input type = "text" id = "a_o_1" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_2" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_3" disabled = "disabled" readonly="readonly">
-<img src = "blank.png" alt = "Empty image for formatting">
-<input type = "text" id = "a_o_4" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_5" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_6" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_7" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_8" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_9" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_10" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "a_o_11" disabled = "disabled" readonly="readonly">
-</div>
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die6.png" alt = "Die with 6 face showing">
-<img src = "blank.png" alt = "Empty image for formatting">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die2.png" alt = "Die with 2 face showing">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "Die4.png" alt = "Die with 4 face showing">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die6.png" alt = "Die with 6 face showing"><br>
-<p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of an author.</p>
-<p>Enter your guess for <img src = "Die1.png" alt = "Die with 1 face showing">: 
-<input type = "text" id = "a_i_1" value = "" onkeyup="updateA1(this.value);"></p>
-<p>Enter your guess for <img src = "Die2.png" alt = "Die with 2 face showing">: 
-<input type = "text" id = "a_i_2" value = "" onkeyup="updateA2(this.value);"></p>
-<p>Enter your guess for <img src = "Die3.png" alt = "Die with 3 face showing">: 
-<input type = "text" id = "a_i_3" value = "" onkeyup="updateA3(this.value);"></p>
-<p>Enter your guess for <img src = "Die4.png" alt = "Die with 4 face showing">: 
-<input type = "text" id = "a_i_4" value = "" onkeyup="updateA4(this.value);"></p>
-<p>Enter your guess for <img src = "Die5.png" alt = "Die with 5 face showing">: 
-<input type = "text" id = "a_i_5" value = "" onkeyup="updateA5(this.value);"></p>
-<p>Enter your guess for <img src = "Die6.png" alt = "Die with 6 face showing">: 
-<input type = "text" id = "a_i_6" value = "" onkeyup="updateA6(this.value);"></p>
-<input type = "button" value = "Clear Author Puzzle" onClick = "clearGuessAuthor();">
-<input type = "button" value = "Check Author Puzzle" onClick = "checkGuessAuthor();">
-<h3>Sports Team Puzzle</h3>
-<div class = "response">
-<input type = "text" id = "st_o_1" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_2" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_3" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_4" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_5" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_6" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_7" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_8" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_9" disabled = "disabled" readonly="readonly">
-<img src = "blank.png" alt = "Empty image for formatting">
-<input type = "text" id = "st_o_10" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_11" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_12" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_13" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_14" disabled = "disabled" readonly="readonly">
-<input type = "text" id = "st_o_15" disabled = "disabled" readonly="readonly">
-</div>
-<img src = "Die6.png" alt = "Die with 6 face showing">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "Die1.png" alt = "Die with 1 face showing">
-<img src = "blank.png" alt = "Empty image for formatting">
-<img src = "Die6.png" alt = "Die with 6 face showing">
-<img src = "Die4.png" alt = "Die with 4 face showing">
-<img src = "Die6.png" alt = "Die with 6 face showing">
-<img src = "Die2.png" alt = "Die with 2 face showing">
-<img src = "Die3.png" alt = "Die with 3 face showing">
-<img src = "Die5.png" alt = "Die with 5 face showing"><br>
-<p>Enter a character (not case sensitive) to replace each of the following dice in the above representation of the name of a sports team.</p>
-<p>Enter your guess for <img src = "Die1.png" alt = "Die with 1 face showing">: 
-<input type = "text" id = "st_i_1" value = "" onkeyup="updateST1(this.value);"></p>
-<p>Enter your guess for <img src = "Die2.png" alt = "Die with 2 face showing">: 
-<input type = "text" id = "st_i_2" value = "" onkeyup="updateST2(this.value);"></p>
-<p>Enter your guess for <img src = "Die3.png" alt = "Die with 3 face showing">: 
-<input type = "text" id = "st_i_3" value = "" onkeyup="updateST3(this.value);"></p>
-<p>Enter your guess for <img src = "Die4.png" alt = "Die with 4 face showing">: 
-<input type = "text" id = "st_i_4" value = "" onkeyup="updateST4(this.value);"></p>
-<p>Enter your guess for <img src = "Die5.png" alt = "Die with 5 face showing">: 
-<input type = "text" id = "st_i_5" value = "" onkeyup="updateST5(this.value);"></p>
-<p>Enter your guess for <img src = "Die6.png" alt = "Die with 6 face showing">: 
-<input type = "text" id = "st_i_6" value = "" onkeyup="updateST6(this.value);"></p>
-<input type = "button" value = "Clear Sports Team Puzzle" onClick = "clearGuessST();">
-<input type = "button" value = "Check Sports Team Puzzle" onClick = "checkGuessST();">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <h1>Ed Karabinus</h1>
+    <p class="role">Senior Backend &amp; Infrastructure Engineer</p>
+    <p class="place">San Francisco, CA</p>
+    <p class="summary">Senior software engineer building distributed backend systems, data and machine learning pipelines, and production infrastructure since 2017, including 6 years at Amazon.</p>
+    <p class="availability">Open to senior and staff backend and infrastructure roles, in San Francisco or remote. <a href="mailto:ejkarabin@gmail.com">Get in touch</a>.</p>
+    <nav aria-label="Page sections">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+
+      <article class="entry">
+        <h3><span class="name">Amazon</span> &mdash; Senior Software Development Engineer</h3>
+        <p class="meta">
+          <span><time datetime="2023-04">Apr 2023</time> &ndash; <time datetime="2026-01">Jan 2026</time></span>
+          <span>San Francisco, CA</span>
+        </p>
+        <ul class="body">
+          <li>Built and operated backend services and ML data pipelines powering assortment optimization for Amazon Fresh and Whole Foods Market.</li>
+          <li>Designed ETL workflows that routed product embeddings into ML pipelines, automating manual processing across 350+ grocery categories and saving hundreds of engineering hours annually.</li>
+          <li>Led an AWS Step Functions and Batch architecture to validate 14 supply-chain attributes with ML models, achieving 90%+ accuracy in partnership with applied science teams.</li>
+          <li>Co-led development of LLM-assisted workflows for supply-chain attribute inference and built a prototype for hyperlocal assortment optimization.</li>
+          <li>Owned services that ingested and validated third-party grocery product data against external sources, improving detection of inaccurate catalog listings.</li>
+          <li>Selected for a senior-led RFID initiative; partnered with hardware teams and vendors to evaluate in-store technology.</li>
+          <li>Mentored engineers and worked with product and engineering leaders on roadmaps and technical direction.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3><span class="name">Amazon</span> &mdash; Software Development Engineer II</h3>
+        <p class="meta">
+          <span><time datetime="2020-03">Mar 2020</time> &ndash; <time datetime="2023-04">Apr 2023</time></span>
+          <span>San Francisco, CA</span>
+        </p>
+        <ul class="body">
+          <li>Served as a founding backend engineer on Amazon Style, building production retail services with stringent reliability and latency requirements.</li>
+          <li>Architected and led delivery of a customer profile service handling personally identifiable information; drove security certification and load testing.</li>
+          <li>Established engineering practices and mentored junior engineers as the team scaled.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3><span class="name">Coyote Logistics</span> &mdash; Software Engineer</h3>
+        <p class="meta">
+          <span><time datetime="2019-02">Feb 2019</time> &ndash; <time datetime="2020-02">Feb 2020</time></span>
+          <span>Chicago, IL</span>
+        </p>
+        <ul class="body">
+          <li>Built backend services for a freight offer management platform used by 1,000+ daily users and processing 10,000+ offers per day.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <h3><span class="name">ION Trading</span> &mdash; Software Developer</h3>
+        <p class="meta">
+          <span><time datetime="2017-02">Feb 2017</time> &ndash; <time datetime="2019-02">Feb 2019</time></span>
+          <span>Chicago, IL</span>
+        </p>
+        <ul class="body">
+          <li>Developed features for a derivatives trade processing platform supporting regulatory compliance and new trading products.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+
+      <article class="entry">
+        <h3><span class="name">Pianism</span></h3>
+        <p class="meta">
+          <span>In active development</span>
+        </p>
+        <div class="body">
+          <p>An iOS piano practice tracker that logs practice automatically. Connect a digital piano and practice sessions start and stop as you play, recorded over MIDI.</p>
+          <p>Built with Swift 6 and SwiftUI. The core logic lives in a pure-Swift package with no Apple-specific imports, so its tests build and run on Linux CI.</p>
+          <p><a href="https://github.com/ed-karabinus/pianism">Pianism on GitHub</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <dl class="pairs">
+        <div>
+          <dt>Languages</dt>
+          <dd>Kotlin, Java, TypeScript, Python, C#, SQL</dd>
+        </div>
+        <div>
+          <dt>Cloud &amp; infrastructure</dt>
+          <dd>AWS Lambda, ECS, Batch, Step Functions, DynamoDB, CloudWatch, CDK; Docker; CI/CD</dd>
+        </div>
+        <div>
+          <dt>Data &amp; ML systems</dt>
+          <dd>ETL, product embeddings, ML pipelines, LLM-assisted workflows, catalog validation</dd>
+        </div>
+        <div>
+          <dt>Developer tools</dt>
+          <dd>Gradle, Maven, Jenkins, Bash, MongoDB</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article class="entry">
+        <h3><span class="name">University of Chicago</span></h3>
+        <p class="body">Bachelor of Science in Mathematics, General Honors</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <dl class="pairs">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:ejkarabin@gmail.com">ejkarabin@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/ed-karabinus">github.com/ed-karabinus</a></dd>
+        </div>
+        <div>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/edwardkarabinus">linkedin.com/in/edwardkarabinus</a></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Plain HTML and CSS, no JavaScript. <a href="https://github.com/ed-karabinus/ed-karabinus.github.io">Source on GitHub</a>.</p>
+  </footer>
 </body>
 </html>
